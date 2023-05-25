@@ -1,0 +1,154 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #5c0080, #2f0a2d, #0e465a, #101352);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilos para o cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  z-index: 999;
+
+}
+footer {
+  display: flex;
+  background-color: white;
+}
+.footer {
+  padding: 10px;
+  justify-content: center;
+}
+
+main {
+  margin-top: 60px; /* Ajuste para evitar sobreposição com a barra de navegação */
+  padding: 20px;
+  margin: 10%;
+  background-color: #ffffff;
+  box-shadow: -18px 19px 64px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+.navbar li:hover {
+  scale: 110%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cards {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos para os cards de imagem */
+.card a{
+  color:black;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+  filter: grayscale(10);
+}
+.card:hover {
+  scale: 120%;
+  z-index: 999;
+  filter: grayscale(0);
+}
+
+.card:hover img{
+    opacity: 0.25;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
+  transition: opacity 0.5s ease;
+}
+
+.card .summary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .summary {
+  opacity: 1;
+}
+
+/* Estilos para tornar a página responsiva */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .navbar li {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}

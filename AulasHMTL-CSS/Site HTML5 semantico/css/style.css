@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: white;
+    background-image: url(../img/background2.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    z-index: 9;
+    margin-top: 1%;
+    margin-left: 5%;
+    position: fixed;
+    width: 90%;
+    background-color: rgb(40,0,70);
+    box-shadow: 0px 2px 15px rgb(150,50,150);
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+header ul a{
+    color:white;
+    text-decoration: none;
+}
+header li{
+    transition: 0.3s;
+}
+header li:hover{
+    font-size: 20px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+header img{
+    width: 30px;
+    filter: invert(1);
+}
+main{
+    background-image: linear-gradient(to right, rgba(20,0,30,0.8),rgb(40,0,70,0.5),rgb(20,0,30,0.8));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center ;
+    gap: 50px;
+}
+
+#Início{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#Início h1{
+    font-size: 30px;
+    text-align: center;
+}
+#Sobre{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color:rgb(40,0,70);
+    border-radius: 15px;
+    padding: 10px; 
+    margin: 20px auto;
+    transition: 500ms linear;
+    box-shadow: 5px 5px 15px rgb(150,50,150);
+}
+#Sobre h2{
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-size: 40px;
+     font-weight: 10px;
+}
+#Sobre p{
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.Sobreimg{
+    display: flex;
+}
+#Sobre img{
+    width: 150px;
+}
+#Sobre:hover{
+    scale: 110%;
+    box-shadow: 10px 10px 25px rgb(150,50,150);  
+}
+#Linguagens{
+    opacity: 0%;
+    transition: 0.5s;
+    width: 60%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0px 0px 30px rgb(97, 15, 97);
+}
+#Linguagens li{
+    text-align:justify;
+    font-size: 25px;
+    line-height: 200%;
+}
+#Linguagens h2{
+    font-size: 40px;
+    text-align: center;
+}
+#Linguagens img{
+    margin-bottom: 50px;
+    margin-left: 50px;
+   filter: invert(1);
+   width: 100px;
+}
+.linguagensimg{
+    display: flex;
+    justify-content: space-around;
+}
+#Linguagens:hover{
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#Contato{
+    margin-bottom: 50px;
+}
+#Contato h2{
+    text-align: center;
+}
+#Contato form{
+    display: flex;
+    flex-direction: column;
+    line-height: 300%;
+}
+#checkbox{
+    width:20px;
+}
+label{
+    font-size:larger ;
+    font-weight: 400;
+}
+#nome{
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+}
+#email{
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+}
+#msg{
+    width: 100%;
+    height: 70px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 10px;
+}
+#Contato div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.botão{
+    justify-content: center;
+}
+#button{
+    background-color: rgb(84, 230, 62);
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    transition: 0.3;
+    border: none;
+    font-weight:600;
+    color: white;
+}
+#button:hover{
+   scale: 105%;
+   background-color: rgb(27, 202, 0);
+   box-shadow: 0px 0px 30px rgb(0, 0, 0)  
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40,0,70);
+    padding: 10px; 
+    box-shadow:0px 2px 15px rgb(150,50,150) ;]
+    font-size: larger;
+}

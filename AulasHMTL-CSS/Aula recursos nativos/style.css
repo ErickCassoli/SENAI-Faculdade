@@ -1,0 +1,44 @@
+body{
+    margin: 0px
+}
+.header{
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(30, 30, 122);
+    text-align: center;
+}
+
+.header h1{
+    font-size: 5vh;
+    line-height: 30px;
+    color: white;
+}
+
+.nav{
+    position: fixed;
+    float: left;
+    margin-top: 55px;
+    width: 150px;
+    background-color: darkolivegreen;
+    height: calc(100vh - 80px); 
+ /*
+ vh - viewport heght
+ vw - viewport width
+ */
+}
+
+.content{
+    margin-top: 55px;
+    float: right;
+    width: calc(100vw - 230px);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(30, 30, 122);
+    text-align: center;
+}

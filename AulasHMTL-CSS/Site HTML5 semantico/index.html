@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="./img/Htmlicon.png">
+                <li><a href="#Início">Início</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Linguagens">Linguagens</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Início">
+            <h1>Seja bem-vindo!</h1>
+            <p>Aqui você encontrará informações sobre o uso de HTML5 semântico para desenvolvimento web</p>
+        </section>
+        <section id="Sobre">
+            <h2>Sobre o HTML5 semântico</h2>
+            <div class="Sobreimg">
+                <p>O HTML5 semântico é uma evoluçao de linguagem HTML que permite aos desenvolvedores criar estruturas mais siginificativas e ricas em conteúdo para seus sites e aplicativos.</p>
+                <img src="./img/html5.png">
+            </div>
+        </section>
+        <section id="Linguagens">
+            <h2>Outras Linguagens</h2>
+            <div class="linguagensimg">
+                <ul>
+                    <li>HiperText Markup Language - HTML</li>
+                    <li>Cascading Style Sheet - CSS</li>
+                    <li>JavaScript - JS</li>
+                </ul>
+                <img src="./img/Htmlicon.png">
+            </div>
+        </section>
+        <section id="Contato">
+            <h2>Fale conosco</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email">
+                <label for="msg">Mensagem:</label>
+                <textarea type="text" name="msg" id="msg"></textarea>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox"> Desejo receber informações sobre HTML5 por E-mail</label>
+                </div>
+                <div class="botão">
+                    <input id="button" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados - Site HTML5 semântico</p>
+    </footer>
+</body>
+</html>
