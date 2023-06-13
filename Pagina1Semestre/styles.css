@@ -91,6 +91,7 @@ main {
   color:black;
 }
 .card {
+  border-radius: 10px 10px 10px 10px;
   width: 200px;
   height: 300px;
   margin: 10px;
@@ -100,6 +101,7 @@ main {
   filter: grayscale(10);
 }
 .card:hover {
+  box-shadow: -22px 50px 64px 4px rgba(0,0,0,0.67);
   scale: 120%;
   z-index: 999;
   filter: grayscale(0);
@@ -113,8 +115,8 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 10px 10px;
   transition: opacity 0.5s ease;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .card .summary {
@@ -129,6 +131,54 @@ main {
 
 .card:hover .summary {
   opacity: 1;
+}
+
+/*///////////////////////////////////////////////*/
+.card1 a{
+  color:black;
+}
+.card1 {
+  border-radius: 10px 10px 10px 10px;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+  filter: grayscale(10);
+}
+.card1:hover {
+  box-shadow: -22px 50px 64px 4px rgba(0,0,0,0.67);
+  scale: 120%;
+  z-index: 999;
+  filter: grayscale(0);
+}
+
+.card1:hover img{
+    opacity: 0.25;
+}
+
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0.25;
+}
+
+.card1 .summary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  transition: opacity 0.5s ease;
+}
+
+.card1:hover .summary {
+  color:#400aca;
 }
 
 /* Estilos para tornar a página responsiva */
@@ -152,3 +202,176 @@ main {
     height: 200px;
   }
 }
+
+  .imagemex{
+    display: flex;
+    border-radius: 10px;
+    width: 75%;
+    margin:40px 40px;
+    box-shadow: -15px 15px 30px -10px rgba(0,0,0,0.75);
+  }
+
+  li{
+    margin-left: 15px;
+  }
+
+  .Slider{
+    margin: 30px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: -24px 17px 19px -7px rgba(0,0,0,0.75);
+  }
+  .Slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+  .Slider input{
+    display: none;
+  }
+  .Slide{
+    width: 25%;
+    position: relative;
+    transition: 1s;
+  }
+  .Slide img{
+    height: 400px;
+    width: 800px;
+  }
+  .Navegation-Manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn {
+    border: 2px solid #cc6ac2;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 10px;
+  }
+  .manual-btn:hover{
+    background-color: #FFF;
+  }
+  #radio1:checked ~ .First{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .First{
+    margin-left: -25%;
+  }
+  #radio3:checked ~ .First{
+    margin-left: -50%;
+  }
+  #radio4:checked ~ .First{
+    margin-left: -75%;
+  }
+  .Navegation-Auto section{
+    border: 2px solid #20a6ff;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .Navegation-Auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+  }
+  .Navegation-Auto section:not(:last-child){
+    margin-right: 10px;
+  }
+  #radio1:checked ~ .Navegation-Auto .btn1{
+    background-color: #FFF;
+  }
+  #radio2:checked ~ .Navegation-Auto .btn2{
+    background-color: #FFF;
+  }
+  #radio3:checked ~ .Navegation-Auto .btn3{
+    background-color: #FFF;
+  }
+  #radio4:checked ~ .Navegation-Auto .btn4{
+    background-color: #FFF;
+  }
+  #radio-a1:checked ~ .First{
+    margin-left: 0;
+  }
+  #radio-a2:checked ~ .First{
+    margin-left: -25%;
+  }
+  #radio-a3:checked ~ .First{
+    margin-left: -50%;
+  }
+  #radio-a4:checked ~ .First{
+    margin-left: -75%;
+  }
+  #radio-a1:checked ~ .Navegation-Auto .btn1{
+    background-color: #FFF;
+  }
+  #radio-a2:checked ~ .Navegation-Auto .btn2{
+    background-color: #FFF;
+  }
+  #radio-a3:checked ~ .Navegation-Auto .btn3{
+    background-color: #FFF;
+  }
+  #radio-a4:checked ~ .Navegation-Auto .btn4{
+    background-color: #FFF;
+  }
+  #radio-b1:checked ~ .First{
+    margin-left: 0;
+  }
+  #radio-b2:checked ~ .First{
+    margin-left: -25%;
+  }
+  #radio-b3:checked ~ .First{
+    margin-left: -50%;
+  }
+  #radio-b4:checked ~ .First{
+    margin-left: -75%;
+  }
+  #radio-b1:checked ~ .Navegation-Auto .btn1{
+    background-color: #FFF;
+  }
+  #radio-b2:checked ~ .Navegation-Auto .btn2{
+    background-color: #FFF;
+  }
+  #radio-b3:checked ~ .Navegation-Auto .btn3{
+    background-color: #FFF;
+  }
+  #radio-b4:checked ~ .Navegation-Auto .btn4{
+    background-color: #FFF;
+  }
+  #radio-c1:checked ~ .First{
+    margin-left: 0;
+  }
+  #radio-c2:checked ~ .First{
+    margin-left: -25%;
+  }
+  #radio-c3:checked ~ .First{
+    margin-left: -50%;
+  }
+  #radio-c4:checked ~ .First{
+    margin-left: -75%;
+  }
+  #radio-c1:checked ~ .Navegation-Auto .btn1{
+    background-color: #FFF;
+  }
+  #radio-c2:checked ~ .Navegation-Auto .btn2{
+    background-color: #FFF;
+  }
+  #radio-c3:checked ~ .Navegation-Auto .btn3{
+    background-color: #FFF;
+  }
+  #radio-c4:checked ~ .Navegation-Auto .btn4{
+    background-color: #FFF;
+  }
