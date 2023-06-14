@@ -97,7 +97,7 @@ main {
   margin: 10px;
   display: inline-block;
   position: relative;
-  transition: 1s;
+  transition: 0.5s;
   filter: grayscale(10);
 }
 .card:hover {
@@ -142,14 +142,16 @@ main {
   width: 200px;
   height: 300px;
   margin: 10px;
+  scale: 105%;
+  box-shadow: -22px 50px 64px 4px rgba(0,0,0,0.67);
   display: inline-block;
   position: relative;
-  transition: 1s;
+  transition: 0.5s;
   filter: grayscale(10);
 }
 .card1:hover {
   box-shadow: -22px 50px 64px 4px rgba(0,0,0,0.67);
-  scale: 120%;
+  scale: 110%;
   z-index: 999;
   filter: grayscale(0);
 }
@@ -201,6 +203,23 @@ main {
   .card img {
     height: 200px;
   }
+}
+
+.matéria{
+    text-align: center;
+    line-height: 2;
+    color: rgb(166, 46, 187);
+    animation: neon 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 35px #7d318e,
+                     0 0 40px #4d0b87,
+                     0 0 55px #0d1175;
+    }
+
 }
 
   .imagemex{
@@ -375,3 +394,27 @@ main {
   #radio-c4:checked ~ .Navegation-Auto .btn4{
     background-color: #FFF;
   }
+  .meu-botao {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom:15px;
+  }
+  
+  .meu-botao:hover {
+    background-color: #0056b3;
+  }
+  
+  .meu-botao:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+
+  
+  
+  
+  
